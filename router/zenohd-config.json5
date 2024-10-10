@@ -1,14 +1,20 @@
 {
   scouting: {
+    timeout: 3000,
+    delay: 500,
     multicast: {
       enabled: true,
-      autoconnect: ["router", "peer"],
+      address: "224.0.0.224:7446",
+      interface: "auto",
+      ttl: 1,
+      autoconnect: { router: ["router", "peer"]},
       listen: true,
     },
     gossip: {
       enabled: true,
       multihop: true,
-      autoconnect: ["router", "peer"],
+      autoconnect: { router: ["router", "peer"]},
+
     },
   },
 }
