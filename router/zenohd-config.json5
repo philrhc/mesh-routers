@@ -11,9 +11,4 @@
       autoconnect: ["router", "peer"],
     },
   },
-  routing: {
-    peer: {
-      mode: "linkstate",
-    },
-  },
 }
