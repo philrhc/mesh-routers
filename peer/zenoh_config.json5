@@ -8,5 +8,5 @@
       enabled: true,
       multihop: true,
     },
-  }
+  },
 }
