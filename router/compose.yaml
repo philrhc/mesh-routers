@@ -1,0 +1,12 @@
+services:
+  zenoh-router:
+    image: eclipse/zenoh:0.11.0
+    restart: unless-stopped
+    network_mode: host
+    volumes:
+      - ./zenohd-config.json5:/zenohd-config.json5
+    command: ['--config /zenohd-config.json5']
+    environment:
+      - RUST_LOG=debug
+    stdin_open: true
+    tty: true

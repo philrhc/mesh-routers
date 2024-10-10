@@ -1,0 +1,12 @@
+{
+  mode: "peer",
+  connect: {
+    endpoints: ["tcp/192.168.10.10:7447"]
+  },
+  scouting: {
+    gossip: {
+      enabled: true,
+      multihop: true,
+    },
+  }
+}

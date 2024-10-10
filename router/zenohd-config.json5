@@ -1,0 +1,14 @@
+{
+  scouting: {
+    multicast: {
+      enabled: true,
+      autoconnect: ["router", "peer"],
+      listen: true,
+    },
+    gossip: {
+      enabled: true,
+      multihop: true,
+      autoconnect: ["router", "peer"],
+    },
+  },
+}
