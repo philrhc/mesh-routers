@@ -7,14 +7,13 @@
       address: "224.0.0.224:7446",
       interface: "auto",
       ttl: 1,
-      autoconnect: { router: ["router", "peer"]},
+      autoconnect: "router|peer",
       listen: true,
     },
     gossip: {
       enabled: true,
       multihop: true,
-      autoconnect: { router: ["router", "peer"]},
-
+      autoconnect: "router|peer",
     },
   },
 }
